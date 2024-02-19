@@ -1,0 +1,180 @@
+/*
+  Name: Johnathan Price
+  Date: 2/18/2024
+  File: css/styles.css
+*/
+
+/* CSS Reset */
+body, header, main, nav, footer, h1, h3, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: #F5E9EA;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Style rules for mobile viewport */
+
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color:#303030
+}
+
+.tab-desk {
+  display: none;
+}
+
+/* Style rules for header area */
+h1 {
+  padding: 4%;
+  text-align: center;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: #9F262D;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: block;
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+nav li a {
+  display: block;
+  color: #f6eee4;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+/*  Style rules for main content */
+main {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+main .cdiv {
+  padding: 5%;
+}
+
+main .cdiv h2 {
+  padding-left: 40px;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+/* Style for the parallax on home page */
+.parallax {
+  display: none;
+}
+
+
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #9F262D;
+  color: #fafafa;
+  padding: 1% 0%;
+}
+
+footer a {
+  color:#f3e6d8;
+  text-decoration: none;
+}
+
+/* Media query for Tablet Viewport */
+@media all and (min-width: 620px) {
+  /* Tablet Viewport: show tab-desk class, hide mobile class */
+  .tab-desk {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+
+  /* Tablet Viewport: style rules for nav area */
+  nav li {
+    border-top: 0;
+    display: inline-block;
+    font-size: 1.25em;
+  }
+
+  nav li a {
+    padding: 0.5em;
+  }
+
+  /* Style for the parallax on home page */
+  .parallax {
+    display: block;
+    /* The image used */
+    background-image: url("../images/AdobeStock_292608623.jpeg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+/* Media query for desktop viewport */
+@media all and (min-width: 1000px) {
+  /* Desktop Viewport: style rules for nav area */
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+
+
+}
+
+
+/* Media query for print */
+@media print {
+  body {
+    color: black;
+    background-color: white;
+  }
+}
