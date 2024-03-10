@@ -55,7 +55,7 @@ nav ul {
 nav li {
   display: block;
   font-size: 1.2em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Emblema One", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
@@ -78,19 +78,120 @@ main .cdiv {
   padding: 5%;
 }
 
-main .cdiv h2 {
-  padding-left: 40px;
-}
-
 main p {
   font-size: 1.25em;
 }
+
+h2 {
+  font-family: "Satisfy", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
 
 /* Style for the parallax on home page */
 .parallax {
   display: none;
 }
 
+a {
+  text-decoration:underline;
+  color: #000000;
+}
+
+a:hover {
+  color: #505050;
+}
+
+
+.home-grid {
+  display: block;
+}
+
+.home-grid div {
+  margin: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+summary::marker {
+  color: #e162bf;
+  font-size: 1.2em;
+}
+
+summary {
+  cursor: pointer;
+  list-style-type: '⬇ ';
+}
+
+details[open] > summary {
+  list-style-type: '⬆ ';
+}
+
+details {
+  display:inline-block;
+}
+
+
+
+
+/* Styles for about.html */
+.flex {
+  display: block;
+}
+
+.flex div {
+  margin: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+#flexone {
+  text-align: center;
+  background-color: #E5C6C9;
+  padding: 20px;
+  height: 100%;
+}
+
+#flexone img {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+#flextwo {
+  background-color: #BEE1E7;
+  height: 100%;
+}
+
+
+
+/* Styles for hobbies page */
+#hobbies-intro {
+  background-color: #BEE1E7;
+  margin: 20px;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+#hobbies-grid {
+  display: block;
+}
+
+#hobbies-grid div {
+  margin: 20px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #E5C6C9;
+  text-align: center;
+}
+
+#hobbies-grid div img {
+  max-width: 100%;
+}
+
+ul {
+  padding-left: 30px;
+}
 
 
 /* Style rules for footer content */
@@ -147,6 +248,20 @@ footer a {
     background-size: cover;
   }
 
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+
+  /* hobbies page style */
+  #hobbies-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+
 }
 
 /* Media query for desktop viewport */
@@ -167,7 +282,30 @@ footer a {
 
   /* Desktop Viewport: Style rules for main content */
 
+  main .cdiv h2 {
+    padding-left: 40px;
+  }
 
+
+  /* Styles for about.html */
+  .flex {
+    display: flex;
+  }
+
+  /* hobbies page style */
+  #hobbies-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+
+}
+
+/* Media query for large desktop viewports */
+@media screen and (min-width: 1921px) {
+  body {
+    background-image: linear-gradient(#F5E9EA, #e5e3f2);
+  }
 }
 
 
